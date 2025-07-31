@@ -32,6 +32,19 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
           />
         </div>
         <div className="space-y-2">
+          <Label htmlFor="title">Professional Title</Label>
+          <Input
+            id="title"
+            value={data.title}
+            onChange={(e) => handleChange('title', e.target.value)}
+            placeholder="Software Engineer"
+            className="transition-fast focus:ring-2 focus:ring-primary"
+          />
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
           <Label htmlFor="email">Email</Label>
           <Input
             id="email"
@@ -39,6 +52,16 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             value={data.email}
             onChange={(e) => handleChange('email', e.target.value)}
             placeholder="john@example.com"
+            className="transition-fast focus:ring-2 focus:ring-primary"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="website">Website</Label>
+          <Input
+            id="website"
+            value={data.website}
+            onChange={(e) => handleChange('website', e.target.value)}
+            placeholder="www.johnsmith.com"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
         </div>
@@ -64,6 +87,54 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             placeholder="New York, NY"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <h3 className="text-lg font-medium text-foreground">Social Links</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label htmlFor="linkedin">LinkedIn</Label>
+            <Input
+              id="linkedin"
+              value={data.linkedin}
+              onChange={(e) => handleChange('linkedin', e.target.value)}
+              placeholder="linkedin.com/in/johnsmith"
+              className="transition-fast focus:ring-2 focus:ring-primary"
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="github">GitHub</Label>
+            <Input
+              id="github"
+              value={data.github}
+              onChange={(e) => handleChange('github', e.target.value)}
+              placeholder="github.com/johnsmith"
+              className="transition-fast focus:ring-2 focus:ring-primary"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="space-y-2">
+            <Label htmlFor="twitter">Twitter</Label>
+            <Input
+              id="twitter"
+              value={data.twitter}
+              onChange={(e) => handleChange('twitter', e.target.value)}
+              placeholder="twitter.com/johnsmith"
+              className="transition-fast focus:ring-2 focus:ring-primary"
+            />
+          </div>
+          <div className="space-y-2">
+            <Label htmlFor="portfolio">Portfolio</Label>
+            <Input
+              id="portfolio"
+              value={data.portfolio}
+              onChange={(e) => handleChange('portfolio', e.target.value)}
+              placeholder="portfolio.johnsmith.com"
+              className="transition-fast focus:ring-2 focus:ring-primary"
+            />
+          </div>
         </div>
       </div>
 

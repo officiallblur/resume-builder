@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    --background: 248 250 252;
-    --foreground: 215 28% 17%;
+    --background: 0 50% 15%;
+    --foreground: 0 0% 95%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 28% 17%;
+    --card: 0 30% 20%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 28% 17%;
+    --popover: 0 30% 20%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 200 98% 39%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 200 100% 50%;
+    --primary: 0 70% 50%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 0 70% 60%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 215 28% 17%;
+    --secondary: 0 20% 25%;
+    --secondary-foreground: 0 0% 90%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 0 20% 25%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 200 98% 39%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 0 60% 45%;
+    --accent-foreground: 0 0% 95%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 0 0% 100%;
-    --input-border: 214.3 31.8% 91.4%;
-    --ring: 200 98% 39%;
+    --border: 0 30% 30%;
+    --input: 0 30% 25%;
+    --input-border: 0 30% 35%;
+    --ring: 0 70% 50%;
 
     --radius: 0.75rem;
 
     /* Resume Builder Specific Colors */
     --resume-bg: 0 0% 100%;
     --resume-text: 215 28% 17%;
-    --resume-accent: 200 98% 39%;
+    --resume-accent: 0 70% 50%;
     --resume-muted: 215 20% 65%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(200 98% 39%), hsl(200 100% 50%));
-    --gradient-bg: linear-gradient(135deg, hsl(248 250 252) 0%, hsl(241 245 249) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 70% 50%), hsl(0 70% 60%));
+    --gradient-bg: linear-gradient(135deg, hsl(0 50% 15%) 0%, hsl(0 40% 20%) 100%);
     
     /* Shadows */
     --shadow-soft: 0 1px 3px 0 hsl(0 0% 0% / 0.1), 0 1px 2px -1px hsl(0 0% 0% / 0.1);

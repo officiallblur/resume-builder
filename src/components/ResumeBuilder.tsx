@@ -13,7 +13,13 @@ export interface PersonalInfo {
   email: string;
   phone: string;
   location: string;
+  website: string;
   summary: string;
+  title: string;
+  linkedin: string;
+  github: string;
+  twitter: string;
+  portfolio: string;
 }
 
 export interface Experience {
@@ -41,6 +47,7 @@ export interface ResumeData {
   experiences: Experience[];
   education: Education[];
   skills: string[];
+  selectedTemplate: string;
 }
 
 const ResumeBuilder = () => {
@@ -51,11 +58,18 @@ const ResumeBuilder = () => {
       email: '',
       phone: '',
       location: '',
-      summary: ''
+      website: '',
+      summary: '',
+      title: '',
+      linkedin: '',
+      github: '',
+      twitter: '',
+      portfolio: ''
     },
     experiences: [],
     education: [],
-    skills: []
+    skills: [],
+    selectedTemplate: 'modern'
   });
 
   const sections = [
@@ -79,6 +93,10 @@ const ResumeBuilder = () => {
 
   const updateSkills = (skills: string[]) => {
     setResumeData(prev => ({ ...prev, skills }));
+  };
+
+  const updateTemplate = (template: string) => {
+    setResumeData(prev => ({ ...prev, selectedTemplate: template }));
   };
 
   const renderActiveForm = () => {
@@ -165,7 +183,7 @@ const ResumeBuilder = () => {
 
           {/* Preview Section */}
           <div className="lg:sticky lg:top-8 lg:max-h-screen lg:overflow-y-auto">
-            <ResumePreview data={resumeData} />
+            <ResumePreview data={resumeData} onTemplateChange={updateTemplate} />
           </div>
         </div>
       </div>
