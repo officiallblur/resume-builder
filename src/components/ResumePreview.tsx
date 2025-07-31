@@ -7,6 +7,16 @@ import { ModernTemplate } from './templates/ModernTemplate';
 import { MinimalTemplate } from './templates/MinimalTemplate';
 import { CreativeTemplate } from './templates/CreativeTemplate';
 import { ProfessionalTemplate } from './templates/ProfessionalTemplate';
+import {ElegantTemplate } from './templates/ElegantTemplate';
+import { AcademicTemplate } from './templates/AcademicTemplate';
+import { DesignerTemplate } from './templates/DesignerTemplate';
+import { ClassicTemplate } from './templates/ClassicTemplate';
+import { BoldTemplate } from './templates/BoldTemplate';
+import {CleanTemplate } from './templates/CleanTemplate';
+import { ExecutiveTemplate } from './templates/ExecutiveTemplate';
+import { TechTemplate } from './templates/TechTemplate';
+
+
 
 interface ResumePreviewProps {
   data: ResumeData;
@@ -47,6 +57,22 @@ export const ResumePreview = ({ data, onTemplateChange }: ResumePreviewProps) =>
         return <CreativeTemplate data={data} />;
       case 'professional':
         return <ProfessionalTemplate data={data} />;
+        case 'elegant':
+        return <ElegantTemplate data={data} />;
+        case 'academic':
+        return <AcademicTemplate data={data} />;
+        case 'designer':
+        return <DesignerTemplate data={data} />;
+        case 'classic':
+        return <ClassicTemplate data={data} />;
+        case 'bold':
+        return <BoldTemplate data={data} />;
+        case 'clean':
+        return <CleanTemplate data={data} />;
+        case 'executive':
+        return <ExecutiveTemplate data={data} />;
+        case 'tech':
+        return <TechTemplate data={data} />;
       default:
         return <ModernTemplate data={data} />;
     }
