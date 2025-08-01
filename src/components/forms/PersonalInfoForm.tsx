@@ -27,7 +27,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             id="fullName"
             value={data.fullName}
             onChange={(e) => handleChange('fullName', e.target.value)}
-            placeholder="John Smith"
+            placeholder="John doe"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
         </div>
@@ -61,7 +61,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             id="website"
             value={data.website}
             onChange={(e) => handleChange('website', e.target.value)}
-            placeholder="www.johnsmith.com"
+            placeholder="www.johndoe.com"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
         </div>
@@ -74,7 +74,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             id="phone"
             value={data.phone}
             onChange={(e) => handleChange('phone', e.target.value)}
-            placeholder="(555) 123-4567"
+            placeholder="(123) 456-7890"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
         </div>
@@ -84,7 +84,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
             id="location"
             value={data.location}
             onChange={(e) => handleChange('location', e.target.value)}
-            placeholder="New York, NY"
+            placeholder="Abuja, Nigeria"
             className="transition-fast focus:ring-2 focus:ring-primary"
           />
         </div>
@@ -99,7 +99,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
               id="linkedin"
               value={data.linkedin}
               onChange={(e) => handleChange('linkedin', e.target.value)}
-              placeholder="linkedin.com/in/johnsmith"
+              placeholder="linkedin.com/in/johndoe"
               className="transition-fast focus:ring-2 focus:ring-primary"
             />
           </div>
@@ -109,7 +109,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
               id="github"
               value={data.github}
               onChange={(e) => handleChange('github', e.target.value)}
-              placeholder="github.com/johnsmith"
+              placeholder="github.com/johndoe"
               className="transition-fast focus:ring-2 focus:ring-primary"
             />
           </div>
@@ -121,7 +121,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
               id="twitter"
               value={data.twitter}
               onChange={(e) => handleChange('twitter', e.target.value)}
-              placeholder="twitter.com/johnsmith"
+              placeholder="twitter.com/johndoe"
               className="transition-fast focus:ring-2 focus:ring-primary"
             />
           </div>
@@ -131,7 +131,7 @@ export const PersonalInfoForm = ({ data, onUpdate }: PersonalInfoFormProps) => {
               id="portfolio"
               value={data.portfolio}
               onChange={(e) => handleChange('portfolio', e.target.value)}
-              placeholder="portfolio.johnsmith.com"
+              placeholder="portfolio.johndoe.com"
               className="transition-fast focus:ring-2 focus:ring-primary"
             />
           </div>

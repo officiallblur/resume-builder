@@ -113,6 +113,19 @@
   }
 }
 
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  #resume-content {
+    background-color: white !important;
+    box-shadow: none !important;
+  }
+}
+
+
 @layer base {
   * {
     @apply border-border;

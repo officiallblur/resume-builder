@@ -15,7 +15,7 @@ import { BoldTemplate } from './templates/BoldTemplate';
 import {CleanTemplate } from './templates/CleanTemplate';
 import { ExecutiveTemplate } from './templates/ExecutiveTemplate';
 import { TechTemplate } from './templates/TechTemplate';
-
+import html2pdf from 'html2pdf.js';
 
 
 interface ResumePreviewProps {
@@ -30,9 +30,22 @@ export const ResumePreview = ({ data, onTemplateChange }: ResumePreviewProps) =>
     return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short' });
   };
 
-  const handlePrint = () => {
-    window.print();
+
+const handlePrint = () => {
+  const element = document.getElementById('resume-content');
+  if (!element) return;
+
+  const opt = {
+    margin:       0,
+    filename:     `${data.personalInfo.fullName || 'resume'}.pdf`,
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 2 },
+    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
   };
+
+  html2pdf().set(opt).from(element).save();
+};
+
 
   const templates = [
     { id: 'modern', name: 'Modern' },
